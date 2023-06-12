@@ -1,0 +1,57 @@
+body
+{
+    background: #50bac8;
+    font-family: Arial, Verdana, sans-serif;
+    color: antiquewhite;
+    font-weight: 100;
+}
+
+h1, h2, h3
+{
+    font-family: Georgia, Times, serif;
+    color: black;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+h1{
+    font-size: 140%;
+}
+h2{
+    font-size: 125%;
+    
+    
+}
+h3{
+    font-size: 100%;
+    color: gray; 
+}
+
+h2 + *, h3 + *{
+    margin-top: 0px;
+}
+
+#main p:nth-child(2) { 
+    font-size: 105%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+a:hover
+{
+    color:beige;
+}
+
+nav a:hover{
+    background-color: white;
+    color: aqua;
+}
+
+#main{
+    border-left: dotted 1px gray;
+    padding-left: 25px;
+}
+
+
+
+
+

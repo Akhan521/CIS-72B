@@ -1,0 +1,136 @@
+/* Custom Styles For The Coffee Corner */
+/* Styles in this stylesheet target items that occur only on one specific page. */
+
+/* CSS Final Project by Aamir Khan */
+
+
+/* First 3 table rules below should probably be left alone, but some values can be adjusted as needed. */
+
+table#calendar { 
+	width: 98%;             /* change this table width as needed  */
+	margin-left: auto;      /* auto left and right margins centers the table since it has a width */
+	margin-right: auto;   
+	border-collapse: collapse; /* leave this alone unless you want the effect of cellspacing then change to "separate" */
+	border-spacing: 0px;       /* leave this alone unless you want the effect of cellspacing then change to what you want */
+}
+
+table#calendar td, table#calendar th { 
+	width: 14%;        /*  there are 7 days a week, so 7 * 14% = 98%, so leave this alone or tweak only slightly        */
+	padding: 0;        /*  adjust as needed to get more spacing inside events table cells (the effect of "cellpadding") */
+}
+
+table#calendar td { 
+	height:  4.75em;     /*  change this height for the calendar days as needed */
+	vertical-align: top; /* keeps text vertically aligned to the top of the cell (default is center)     */
+}
+
+
+/* 1. Events Page Calendar Styles: Create 5 or more calendar table related rules. These should not affect other tables!    
+   ==============================  5 required areas to style: table heading, weekdays, date #'s, empty days, & events.      
+                                   You can style the table itself too. Consider using backgrounds on some of these areas. */
+#calendar {
+    border: 1px solid #45170C;
+    background: linear-gradient(#eed6bc,#A88884);
+}
+
+#calendar td {
+    border: 1px solid #45170C;
+}
+
+#monthYear {
+    color: #291C1B;
+    background: linear-gradient(#eed6bc,#A88884);
+    border: 1px solid #45170C;
+}
+
+.weekday {
+    font-family: 'coffeetea_demoregular', serif;
+    font-style: italic;
+    font-weight: bold;
+    background: linear-gradient(#A88884,#eed6bc);
+    border: 1px solid #45170C;
+}
+
+.date {
+    width: 15%;
+    text-align: center;
+    padding: 5px;
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    border: 1px solid #45170C;
+    background-color: #A88884;
+}
+
+.noday {
+    background: url(calendar-bg-empty-cells.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.event {
+    text-align: center;
+    padding: 5px;
+    font-family: 'coffeetea_demoregular', serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* 2. FAQ Page Question & Answer Styles: Style questions differently from answers so questions are easier to find,    
+   ====================================  question and answer pairs are grouped closer together vertically,          
+                                         and as a result the whole section is more visually pleasing.               */
+.question {
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 1px 1px #dab38b;
+    font-size: 1.5em;
+    margin-bottom: -10px;
+}
+
+.answer {
+    margin-left: 20px;
+    font-family: 'coffeetea_demoregular', serif;
+    font-weight: 700;
+}
+
+/* 3. Services Page Image Styles: Use each figures' id to float left/right & give margin on the inner side to keep text away.       
+   =============================  Use images' class to give common border properties (use a border style other than "solid").   
+                                  Also set common text styling for the figcaptions, perhaps including center aligning.       */
+#roomservicefig {
+    float: left;
+    margin-right: 25px;
+    margin-left: -5px;
+}
+
+#spafig {
+    float: right;
+    margin-left: 20px;
+}
+
+.servicepic {
+    border: 4px ridge #5A4545;
+    box-shadow: 5px 5px 8px rgba(75, 64, 64, .85);
+}
+
+figcaption {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 85%;
+}
+
+/* Miscellaneous Styles: For any other styles for a single page that does not fit the above categories.  
+   ====================  Use only as needed. This section is optional and does not count for any points.    */
+#hotelpic {
+    border: 4px ridge #5A4545;
+    box-shadow: 5px 5px 8px rgba(75, 64, 64, .85);
+    width: 65%;
+}
+
+#hotelfig {
+    text-align: center;
+}
+
+#reservationspage footer {
+    padding-top: 60px;
+    padding-right: 60px;
+}

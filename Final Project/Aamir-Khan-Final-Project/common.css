@@ -1,0 +1,234 @@
+/* Common Styles for all pages of The Coffee Corner Web site */
+/* Note: Refer to grading sheet for details on each of these sections */
+
+/* CSS Final Project by Aamir Khan */
+
+
+/* First rule below should probably be left alone. */
+
+header, nav, section, footer, article {     /* leave this alone */
+	display: block;
+}
+
+/* 1. Page Styles: On the "body" you must at least set color, background, margin, padding, font family & size.    
+   ==============  Optionally, you can also set styles on the page wrapper div here if you like.  
+	               But note that you will lose points for any of the above properties that are not set for the body  */
+@font-face {
+    font-family: 'coffeetea_demoregular';
+    src: url('Fonts/coffeeteademoregular-all4m-webfont.woff2') format('woff2'),
+         url('Fonts/coffeeteademoregular-all4m-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #A38F8F;
+    color: #1D110D;
+    font-family: Times, serif;
+    font-size: 100%;
+    margin: 30px 2.5%;
+    padding: 0;
+}
+	                
+/* 2. Header (Banner) Styles: For the top header area (which includes the h1) and should be treated as a banner area. 
+   =========================  Possible properties to use here include "background", "height", "padding", "margin",     
+                              and "border".  Feel free to use others instead. Use at least 2 properties.           */
+header {
+    background: url(coffee-banner.jpg);
+    background-size: contain;
+    width: 100%;
+    padding: 5px 10px 30px 50px;
+    margin: -15px 5.5% 0 -2.5%;
+    border: #1D110D solid 2px;
+}
+                    
+/* 3. Heading Styles: For h1-h3 together, set font-family and color; for each separately set font-size using em or %.   
+   =================  Set other styles as needed. Goal is to make heading text stand out from other page text.   
+	                  Use text-shadowing on your headings. One of your heading fonts must be an embedded Web font.  */
+h1, h2, h3 {
+    font-family: 'coffeetea_demoregular', Georgia, serif;
+    color: #1D110D;
+}
+
+h2, h3 {
+    text-shadow: 2px 2px #dab38b;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* 4. Intro Paragraph Styles:  use at least 1 property to emphasize 1st paragraph (intro article) 
+   =========================   */
+#intro {
+    font-family: 'coffeetea_demoregular', Times, serif;
+    font-weight: bold;
+}
+
+/* 5. Copyright Styles:  use at least 2 properties to de-emphasize the copyright paragraph (footer)  
+   ===================  */
+footer {
+    text-align: center;
+    font-size: 0.75em;
+    padding-top: 45px;
+}
+
+/* 6. General Link Styles: Style the links outside the nav bar area using at least color and text-decoration  
+   ======================  Write 4 separate rules to affect all 4 link states.  */
+a:link {
+    text-decoration: underline;
+    color: #331a00;
+}
+
+a:visited {
+    color: #3a2612;
+}
+
+a:hover {
+    color: #e1bf9d;
+}
+
+a:active {
+    background-color: #140d06;
+}
+
+/* 7. Navigation Bar Styles: Should affect only the nav bar links. Style nav, ul and its li's as needed.           
+   ========================  Style all 4 link states to make active buttons when hovering. Remove bullets from list display. 
+                             Use selectors like "#eventspage #eventslink" to style the link to its own page separately      */
+nav ul {
+    list-style-type: none;
+    font-family: 'coffeetea_demoregular', Times, serif;
+    font-weight: bold;
+    color: blanchedalmond;
+}
+nav a:link {
+    text-decoration: none;
+    color: #dab38b;
+}
+
+nav a:visited {
+    color: #C4837B;
+}
+
+nav a:hover {
+    background: linear-gradient(#dab38b,#331a00);
+    text-shadow: none;
+}
+
+nav a:active {
+    background: linear-gradient(#140d06,#e1bf9d);
+}
+
+#homepage #homelink, #contactpage #contactlink, #eventspage #eventslink, 
+#faqpage #faqlink, #servicespage #serviceslink, #reservationspage #reservationslink {
+    color: #E5C8BF;
+    background: linear-gradient(#44312B,#B0705C);
+    text-shadow: none;
+}
+
+/* 8. General List Styles: For unordered lists outside of nav bar. Set 2 levels of bullet shapes & 2 levels of bullet images. 
+   ======================  Outer bullets should stand out more than inner bullets. Use Reservations & Contact pages to test. */
+ul {
+    list-style-image: url(coffee-bean-bullet.png);
+    list-style-type: square;
+}
+
+ul ul{
+    list-style-image: url(coffee-cup-bullet.jpg);
+    list-style-type: lower-roman;
+}
+
+/* 9. Testimonial Styles: At least 4 rules to style at least these 4 items: the surrounding testimonials article,    
+   =====================  the 3 testimonial divs, the quotes, and the speakers. Goals: Uniquely style testimonial section 
+	                      itself, emphasize quote, de-emphasize speaker name. Adjust vertical spacing between items.       */
+#testimonials {
+    border: 3px double #44312B;
+    background: linear-gradient(#A38F8F,#B0705C);
+    padding: 10px;
+}
+
+.testimonial {
+    font-style: normal;
+    font-weight: 300;
+}
+
+.quote {
+    color: blanchedalmond;
+    text-shadow: 2px 1px #674840;
+}
+
+.speaker {
+    margin: -10px 0 0 10px;
+    font-style: italic;
+    font-family: 'coffeetea_demoregular', serif;
+}
+
+/* 10. Logo Positioning Styles: Absolute Positioning of logo image using "positionme" id. Leave the existing blank div at 
+   ===========================  bottom of each page in the html & style it to go toward the top of pages where you like.  
+	                            Give it a height & width to match logo image, set image as background, position absolutely */
+#positionme {
+    background-image: url(hotel-logo.png);
+    width: 100px;
+    height: 115px;
+    position: absolute;
+    top: 1px;
+    left: 2.5px;
+    border: 1.5px solid black;
+}
+
+/* 11. Multi-Column Layout Styles: Use of float, position, margin, and/or padding styles to create a multi-column layout.  
+   ==============================  For help with these styles, see the online "Final Project Layout Guide" handout.     
+	                               For some partial credit here you can use just the layout styles from A3P5              */
+body {
+    margin: 0;
+}
+
+#pagewrap {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#main {
+    clear: left;
+    margin-top: 1.5em;
+    padding-right: 32.5%;
+}
+
+#testimonials {
+    position: absolute;
+    top: 160px;
+    right: 20px;
+    width: 25%;
+}
+
+nav ul {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+nav li {
+    float: left;
+    margin-right: 5em;
+    background: url(nav-link-bg.jpg);
+    background-size: contain;
+    padding: 2px;
+    border: 1px solid #44312B;
+}
+
+nav {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+/* Miscellaneous Styles: Styles that don't fit in any of the above categories but affect multiple pages can go here. 
+   ====================  Use only as needed. This section is optional and does not count for any points.                 */

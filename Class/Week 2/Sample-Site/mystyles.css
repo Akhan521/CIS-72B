@@ -1,0 +1,52 @@
+body
+{
+    background: #10aaa8;
+    font-family: Arial, sans-serif;
+    color: antiquewhite;
+    font-weight: 100;
+}
+
+/* Group selector. */
+h1, h2, h3
+{
+    font-family: Georgia, serif;
+    color: black;
+    margin-bottom: 0px;
+}
+
+/* Sibling selectors: We're selecting all elements that come directly after h2 and h3 headings in our webpage. We use to * to indicate all elements. */
+h2 + *, h3 + *{
+    margin-top: 5px;
+}
+
+a {
+    color: antiquewhite;
+}
+
+/* Pseudo-class selector. */
+a:visited {
+    color: darkblue;
+}
+
+/* Pseudo-class selector. */
+a:hover
+{
+    color:red;
+}
+
+/* Descendant pseudo-class selector. */
+nav a:hover{
+    background-color: blanchedalmond;
+    color: palevioletred;
+}
+
+/* Targeting an ID. */
+#main{
+    border-left: dotted 1px black;
+    padding-left: 15px;
+}
+
+
+
+
+
